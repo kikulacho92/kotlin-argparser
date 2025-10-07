@@ -615,7 +615,7 @@ class ArgParser(
         if (helpFormatter != null) {
             option<Unit>("-h", "--help",
                     errorName = "HELP", // This should never be used, but we need to say something
-                    help = helpFormatter.helpMessage) {
+                    help = helpFormatter.helpMessage) { //now this message is customizable
                 throw ShowHelpException(helpFormatter, delegates.toList())
             }.default(Unit).registerRoot()
         }
