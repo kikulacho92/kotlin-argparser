@@ -65,6 +65,8 @@ class DefaultHelpFormatter(
     val indent = "  "
     val indentWidth = indent.codePointWidth()
 
+	override value helpMessage = "show this help message and exit"
+
     override fun format(
         programName: String?,
         columns: Int,

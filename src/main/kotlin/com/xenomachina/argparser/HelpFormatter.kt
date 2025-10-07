@@ -22,6 +22,11 @@ package com.xenomachina.argparser
  * Formats help for an [ArgParser].
  */
 interface HelpFormatter {
+
+	/**
+	 * The help message added automatically with the options -h, --help
+	 */  
+    val helpMessage: String
     /**
      * Formats a help message.
      *
